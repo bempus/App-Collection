@@ -12,6 +12,8 @@ html {
   margin: 0;
   padding: 0;
   background: #333;
+  max-width: 500px;
+  margin: auto;
 }
 
 #clock-container {
@@ -23,6 +25,7 @@ html {
 
 #gamedata {
   display: flex;
+  justify-content: space-between;
 }
 
 speedcontroller {
