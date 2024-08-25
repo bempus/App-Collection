@@ -124,7 +124,8 @@ window.updateSpawnCarInterval = () => {
 
 const initCarSpawn = () => {
   updateSpawnCarInterval();
-  const cardata = document.createElement("cardata");
+
+  const cardata = document.querySelector("#car-data");
   const carsPassed = document.createElement("passed");
   const carsClickedContainer = document.createElement("div");
   const carsClicked = document.createElement("clicked");
@@ -133,7 +134,6 @@ const initCarSpawn = () => {
   carsClickedContainer.append(carsClicked);
   cardata.append(carsClickedContainer);
   window.carsPassed = -1;
-  document.querySelector("game").append(cardata);
   updateCarsPassed();
 };
 

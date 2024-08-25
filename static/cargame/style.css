@@ -15,11 +15,14 @@ html {
 }
 
 #clock-container {
-  position: absolute;
   display: grid;
-  place-content: center;
+  place-content: start;
   right: 1rem;
   top: 1rem;
+}
+
+#gamedata {
+  display: flex;
 }
 
 speedcontroller {
@@ -68,14 +71,13 @@ speedcontroller > * {
 game {
   display: grid;
   place-content: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 world {
   position: relative;
-  width: 500px;
+  width: min(500px, 100vw);
   height: 500px;
   background: rgb(23, 233, 23);
   overflow: hidden;
@@ -132,15 +134,11 @@ car windscreen {
 }
 
 cardata {
-  position: absolute;
   top: 1rem;
   left: 1rem;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #sound-container {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
 }

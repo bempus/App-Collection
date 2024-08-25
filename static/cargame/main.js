@@ -5,9 +5,7 @@ import initBgMusic, {
   displaySoundLevelSlider,
 } from "./music.js";
 
-const clockContainer = document.createElement("div");
-clockContainer.id = "clock-container";
-document.querySelector("game").append(clockContainer);
+const clockContainer = document.querySelector("#clock-container");
 initClock(clockContainer);
 initSpeed(clockContainer);
 initBgMusic();
