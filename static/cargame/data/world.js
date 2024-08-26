@@ -50,6 +50,10 @@ const addCar = () => {
   const door = document.createElement("door");
   const windScreen = document.createElement("windscreen");
 
+  const colors = ["red", "green", "blue", "magenta", "gray"];
+
+  const carColor = colors[Math.floor(Math.random() * colors.length)];
+
   car.addEventListener("click", updateCarsClicked, { once: true });
 
   const carData = {
@@ -60,6 +64,8 @@ const addCar = () => {
     width: carData.width,
     height: "40px",
   };
+
+  car.classList.add(carColor);
 
   car.append(door, windScreen);
   cars.add(car);
@@ -102,7 +108,6 @@ const addCar = () => {
 
   carAnim.updatePlaybackRate(window.speed);
 
-  console.log(carAnim.updatePlaybackRate);
   car.animation = carAnim;
   carAnim.onfinish = (e) => {
     if (!car.parentNode) return;

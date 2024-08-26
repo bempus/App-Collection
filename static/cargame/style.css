@@ -145,3 +145,27 @@ cardata {
 
 #sound-container {
 }
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.magenta {
+  background: magenta;
+}
+
+.gray {
+  background: #aaa;
+}
+
+.green {
+  background: green;
+}
